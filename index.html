@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zodiac Pet Rock Maker by Tina Rungsawang</title>
+    <meta name="description" content="Make your own pet rock!" />
+    <link rel='icon' href='https://i.ibb.co/gSZFyrP/favicon.png' type='image/x-icon'/ >
+    <meta property="og:image" content="https://i.ibb.co/FW0cV2j/preview-pet.png" />
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <div id="top-bar">
+    <h1 id="title">Zodiac Pet Rock</h1>
+    <h2 id="name"><a href="https://tina.pizza/">by Tina Rungsawang</a></h2>
+    </div>
+
+
+    <canvas id="canvasMain" width="320" height="320"> </canvas>
+  
+
+  <div id="download-sec">
+    <button id="download" class="block">Download Pet</button>
+  </div>
+
+
+    <div id="tabcontainer">
+      <div id="tabs">
+        <button id="tabbutton-01">Rock</button>
+        <button id="tabbutton-02">Face</button>
+        <button id="tabbutton-03">Hair</button>
+        <button id="tabbutton-04">Acc</button>
+        <button id="tabbutton-05">Background</button>
+      </div>
+
+      <div id="tabcontent">
+        <div id ="tab01">
+         <div.scroll id="rockbuttons">
+            <button class="rock" id="rockButton01">
+                <img src="rocks/01-rock-garnet.png" width="100px" />
+                <br>Aquarius:<br>Garnet</br>
+              </button>
+              <button class="rock" id="rockButton02">
+                <img src="rocks/02-rock-amethyst.png" width="100px" />
+                <br>Pisces:<br>Amethyst</br>
+              </button>
+              <button class="rock" id="rockButton03">
+                <img src="rocks/03-rock-bloodstone.png" width="100px" />
+                <br>Aries:<br>Bloodstone</br>
+                </button>
+                <button class="rock" id="rockButton04">
+                  <img src="rocks/04-rock-sapphire.png" width="100px" />
+                  <br>Taurus:<br>Sapphire</br>
+                </button>
+                <button class="rock" id="rockButton05">
+                  <img src="rocks/05-rock-agate.png" width="100px" />
+                  <br>Gemini:<br>Agate</br>
+                </button>
+                <button class="rock" id="rockButton06">
+                  <img src="rocks/06-rock-moonstone.png" width="100px" />
+                  <br>Cancer:<br>Moonstone</br>
+                </button>
+                 <button class="rock" id="rockButton07">
+                   <img src="rocks/07-rock-peridot.png" width="100px" />
+                   <br>Leo:<br>Peridot</br>
+                </button>
+                 <button class="rock" id="rockButton08">
+                   <img src="rocks/08-rock-carnelian-v3.png" width="100px" />
+                   <br>Virgo:<br>Carnelian</br>
+                </button>
+                 <button class="rock" id="rockButton09">
+                   <img src="rocks/09-rock-opal.png" width="100px" />
+                   <br>Libra:<br>Opal</br>
+                </button>
+                <button class="rock" id="rockButton10">
+                   <img src="rocks/10-rock-aquamarine.png" width="100px" />
+                  <br>Scorpio:<br>Aquamarine</br>
+                </button>
+                <button class="rock" id="rockButton11">
+                   <img src="rocks/11-rock-topaz.png" width="100px" />
+                  <br>Sagittarius:<br>Topaz</br>
+                </button>
+                <button class="rock" id="rockButton12">
+                   <img src="rocks/12-rock-ruby.png" width="100px" />
+                   <br>Capricorn:<br>Ruby</br>
+                </button>
+        </div.scroll>
+      </div>
+
+      <div id="tab02">
+        <div.scroll id="facebuttons">
+          <button id="faceButtonEmpty">
+            <img src="emptyv3.png" width="100px" />
+          </button>
+          <button id="faceButton01">
+             <img src="faces/face-01.png" width="100px" />
+          </button>
+          <button id="faceButton02">
+            <img src="faces/face-02.png" width="100px" />
+          </button>
+          <button id="faceButton03">
+            <img src="faces/face-03.png" width="100px" />
+          </button>
+          <button id="faceButton04">
+              <img src="faces/face-04.png" width="100px" />
+          </button>
+          <button id="faceButton05">
+              <img src="faces/face-05.png" width="100px" />
+          </button>
+          <button id="faceButton06">
+              <img src="faces/face-06.png" width="100px" />
+          </button>
+          <button id="faceButton07">
+              <img src="faces/face-07.png" width="100px" />
+          </button>
+          <button id="faceButton08">
+              <img src="faces/face-08.png" width="100px" />
+          </button>  
+        </div.scroll>
+      </div>
+
+      <div id="tab03">
+        <div id="hairbuttons">
+            <button id="hairButtonEmpty">
+                <img src="emptyv3.png" width="100px" />
+              </button>
+          <button id="hairButton01">
+             <img src="hair/hair-01.png" width="100px" />
+          </button>
+          <button id="hairButton02">
+              <img src="hair/hair-02.png" width="100px" />
+           </button>
+           <button id="hairButton03">
+              <img src="hair/hair-03.png" width="100px" />
+           </button>
+           <button id="hairButton04">
+              <img src="hair/hair-04.png" width="100px" />
+           </button>
+        </div>
+      </div>
+
+      <div id="tab04">
+        <div id="accbuttons">
+          <button class="acc" id="accButtonEmpty">
+              <img src="emptyv3.png" width="100px" />
+          </button>
+          <button class="acc" id="accButton03">
+              <img src="acc/acc-03.png" width="100px" />
+          </button>
+          <button class="acc" id="accButton04">
+              <img src="acc/acc-04.png" width="100px" />
+          </button>
+          <button class="acc" id="accButton01">
+              <img src="acc/acc-01.png" width="100px" />
+            </button>
+          <button class="acc" id="accButton02">
+              <img src="acc/acc-02.png" width="100px" />
+          </button>
+          <button class="acc" id="accButton05">
+              <img src="acc/acc-05.png" width="100px" />
+          </button>
+        </div>
+      </div>
+
+      <div id="tab05">
+        <div id="bgbuttons">
+            <button class ="bg" id="bgButtonEmpty">
+                <img src="emptyv3.png" width="100px" />
+            </button>
+          <button class="bg" id="bgButton01">
+            <img src="backgrounds/01-background-space.jpg" width="100px" />
+          </button>
+          <button class="bg" id="bgButton02">
+              <img src="backgrounds/02-background-underwater.jpg" width="100px" />
+          </button>
+          <button class="bg" id="bgButton03">
+              <img src="backgrounds/03-background-centralpark.jpg" width="100px" />
+          </button>
+          <button class="bg" id="bgButton04">
+              <img src="backgrounds/04-background-sand.jpg" width="100px" />
+          </button>
+          <button class="bg" id="bgButton05">
+              <img src="backgrounds/05-background-moon.jpg" width="100px" />
+          </button>
+          <button class="bg" id="bgButton06">
+              <img src="backgrounds/06-background-rainforest.jpg" width="100px" />
+          </button>
+          <button class="bg" id="bgButton07">
+              <img src="backgrounds/07-background-gooey.jpg" width="100px" />
+          </button>
+          <button class="bg" id="bgButton08">
+              <img src="backgrounds/08-background-rocks.jpg" width="100px" />
+          </button>
+          <button class="bg" id="bgButton09">
+              <img src="backgrounds/08-background-shiny.jpg" width="100px" />
+          </button>
+        </div>
+      </div>
+
+
+    </div>
+
+    </div>
+
+      <script src="src/index.js"></script>
+    </div>
+  </body>
+</html>
