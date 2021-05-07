@@ -3,7 +3,7 @@ by Tina Rungsawang for ITP 2020
 
 
 Make your own zodiac pet rock!
-**https://petrock.vercel.app/**
+**https://8eb83.csb.app/**
 
 ![Zodiac Pet Rock](https://i.ibb.co/kyYgvq2/my-Pet-Rock.png)
 
